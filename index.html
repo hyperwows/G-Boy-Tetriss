@@ -94,12 +94,12 @@ html,body{height:100%;margin:0;background:#0b0b0b;display:flex;align-items:cente
 /* mobile D-pad precise overlay */
 #mobile-controls{ display:none }
 @media (max-width:768px){
-  #mobile-controls{ display:block; position:absolute; z-index:50; left:50%; transform:translateX(-50%); top:calc(41% + var(--canvas-h) + 10px); width:calc(var(--frame-w) - 40px); pointer-events:none }
+  #mobile-controls{ display:block; position:absolute; z-index:50; left:54%; transform:translateX(-50%); top:calc(21% + var(--canvas-h) + 10px); width:calc(var(--frame-w) - 40px); pointer-events:none }
   #dpad{ position:relative; width:var(--dpad-size); height:var(--dpad-size); left:12px; pointer-events:none }
   .mob-btn{ position:absolute; width:var(--mob-btn-size); height:var(--mob-btn-size); border-radius:50%; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.25); backdrop-filter:blur(6px); color:#fff; display:flex; align-items:center; justify-content:center; pointer-events:auto }
   #dpad .rotate{ left: calc((var(--dpad-size) - var(--mob-btn-size))/2); top: 0 }
   #dpad .left{ left:0; top: calc((var(--dpad-size) - var(--mob-btn-size))/2) }
-  #dpad .down{ left: calc((var(--dpad-size) - var(--mob-btn-size))/2); top: calc((var(--dpad-size) - var(--mob-btn-size))/2) }
+  #dpad .down{ left: calc((var(--dpad-size) - var(--mob-btn-size))/1); top: calc((var(--dpad-size) - var(--mob-btn-size))/2) }
   #dpad .right{ left: calc(var(--dpad-size) - var(--mob-btn-size)); top: calc((var(--dpad-size) - var(--mob-btn-size))/2) }
   #mobile-actions{ position:absolute; left: calc(var(--dpad-size) + 36px); top: 18px; display:flex; flex-direction:column; gap:8px; pointer-events:none }
   #mobile-actions .mob-btn{ pointer-events:auto; width:54px; height:54px; border-radius:10px; font-size:13px }
